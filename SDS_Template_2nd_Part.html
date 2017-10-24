@@ -1,0 +1,720 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="Koushik Saha">
+	<META NAME="CREATED" CONTENT="20171023;150100000000000">
+	<META NAME="CHANGEDBY" CONTENT="Koushik Saha">
+	<META NAME="CHANGED" CONTENT="20171024;192000000000000">
+	<META NAME="AppVersion" CONTENT="15.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin: 1in }
+		P { margin-bottom: 0.08in; direction: ltr; widows: 2; orphans: 2 }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P ALIGN=JUSTIFY STYLE="margin-left: 2in; margin-bottom: 0.11in"><FONT COLOR="#92d050"><FONT FACE="Calibri Light, serif"><FONT SIZE=6 STYLE="font-size: 28pt"><B>Architectural
+Design </B></FONT></FONT></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#00b050"><FONT SIZE=5><B>1
+High level components and interfaces</B></FONT></FONT><FONT SIZE=4><B>
+</B></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.25in; margin-bottom: 0.11in"><FONT COLOR="#00b050"><FONT SIZE=4 STYLE="font-size: 16pt"><B>1.1
+Components</B></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Cow
+	Provider Component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><FONT SIZE=3>This
+is one of the key components of the Cow Registration and Login
+System. This is where the User or Admin selection option is
+implemented. This also includes the User profile, Admin Profile,
+</FONT><FONT SIZE=3><SPAN LANG="en">Butcher information, Cow
+information with specification with video and pictures, also there is
+information about location details.</SPAN></FONT></P>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.04in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=2>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Admin
+	and User Management Component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><FONT SIZE=3>This
+is the major sub system that is responsible for the security of the
+Cow Registration system. It authenticate users and also handles the
+user profile and order activities such as creating new user accounts,
+removing accounts from the system etc. Furthermore this component
+Implements the “control access privilege matrix”. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.04in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=3>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Cow
+	Component: </B></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><FONT SIZE=3>This
+is the key component that implements the functions related to the cow
+specification operations of administrator such as adding a new Cow
+with cow specification, editing cow details and order item or change
+location or change phone number and removing cows or details change
+about cow specification or specific cow order etc. Cow component is
+also responsible for displaying the available cow or animal list. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=4>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Chart
+	Component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><FONT SIZE=3>Chart
+component is a component where the final page arrive. Here user can
+modify or change his/her phone number or location and add to the
+payment page and define the payment method. In this page help admin
+can know where he should delivered that cows or animal. In this case
+there is some important notification method where admin can send some
+important information or delivery message through notification.</FONT></P>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=5>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Public
+	Component:</B></FONT><FONT SIZE=3> </FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><FONT SIZE=3>This
+is a relatively small subsystem compared to the other components of
+the cow Registration System.</FONT></P>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=6>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Update
+	Component:  </B></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1in; margin-bottom: 0.11in"><FONT SIZE=3>Here
+we can update user profile, admin profile and location or phone
+number and details change about cows and animals.</FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Cow
+	Provider Component</B></FONT><FONT SIZE=4>:</FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>userSelectCowsOrAnimal:</B></FONT><FONT SIZE=3>
+This interface will provide the available cow or animal list for the
+website. This allows the user to choose the cows or animal, hence a
+busy interface. This interface is the bridge between the user
+component and the animal component.  </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in">  
+ 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>userProfile:</B></FONT><FONT SIZE=3>
+This interface is used for the user to view and edit personnel
+information.  Authentication and user management component </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>authenticateUser:</B></FONT><FONT SIZE=3>This
+is the interface that allows the users to login to the system. This
+will guide the user to the relevant home page. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=2>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Cow
+	or Animal component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>newCowOrAnimals:
+</B></FONT><FONT SIZE=3> This interface is where administrator adds
+new cows or animal. The cows and admin components are connected.</FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>editCowsOrAnimal:</B></FONT><FONT SIZE=3>
+In this interface the administrator edit existing cows or animals
+specification details. The Cows or animals and user components are
+connected. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=3>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Publish
+	component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>Getnotice:</B></FONT><FONT SIZE=3>
+ This is the interface where the notifications are published. This is
+the interface where the time table is published. This is connected
+with the cows or animals component. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.04in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=4>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Public
+	component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>viewFinalChart:</B></FONT><FONT SIZE=3>
+ This is the interface which shows the final shopping or order chart
+adding total money, therefore connected with the cowsOrAnimals
+component.  </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<OL START=5>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Update
+	Component:</B></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>updateHomeDelivery:</B></FONT><FONT SIZE=3>
+here user can change location and phone number where to delivery.</FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3><B>updateBUTCCows,
+updateCUSDOCows, updateOWNDOCCows</B></FONT><FONT SIZE=3> this
+component have update all details about cows or animals.</FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<FONT COLOR="#00b050"><FONT SIZE=4 STYLE="font-size: 16pt">Dependency
+and Interaction between Components:</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<TABLE WIDTH=275 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=259>
+	<TR>
+		<TD WIDTH=259 HEIGHT=32 VALIGN=TOP STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P><FONT SIZE=4>Cow or Animal</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=259 HEIGHT=105 VALIGN=TOP STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-id(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-price(int);</FONT></P>
+			<P><FONT SIZE=4>-weight(int);</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=259 HEIGHT=133 VALIGN=TOP STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-Entry(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-OnBid(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-Sold(string);</FONT></P>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0.11in"><TABLE DIR="LTR" ALIGN=RIGHT WIDTH=264 HSPACE=4 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=248>
+	<TR>
+		<TD WIDTH=248 HEIGHT=27 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P><FONT SIZE=4>Admin</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=248 HEIGHT=63 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-id(string);</FONT></P>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=248 HEIGHT=148 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-insert_animal(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-declaring_sold(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-add_customer(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-delivery(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-remove_customer(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-remove_animal(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-order_history(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-calculate_price(int);</FONT></P>
+			<P><FONT SIZE=4>-set_bidfor_price(string);</FONT></P>
+		</TD>
+	</TR>
+</TABLE><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><TABLE DIR="LTR" ALIGN=LEFT WIDTH=264 HSPACE=4 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=248>
+	<TR>
+		<TD WIDTH=248 HEIGHT=32 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P><FONT SIZE=4>Customer</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=248 HEIGHT=109 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-user_name(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-password(string);</FONT></P>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=248 HEIGHT=185 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-buy_animal(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-search_for_animal(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-registation(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-order(string);</FONT></P>
+			<P><FONT SIZE=4>+payment;</FONT></P>
+		</TD>
+	</TR>
+</TABLE><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<TABLE WIDTH=264 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=248>
+	<TR>
+		<TD WIDTH=248 HEIGHT=25 VALIGN=TOP STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P><FONT SIZE=4>Payment</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=248 HEIGHT=92 VALIGN=TOP STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-amount (int);</FONT></P>
+			<P><FONT SIZE=4>-time(string);</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=248 HEIGHT=200 VALIGN=TOP STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-booking(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-payondelivery(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>+ Customer;</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>+Animal;</FONT></P>
+			<P><FONT SIZE=4>+Admin;</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><TABLE DIR="LTR" ALIGN=RIGHT WIDTH=252 HSPACE=4 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=236>
+	<TR>
+		<TD WIDTH=236 HEIGHT=33 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P><FONT SIZE=4>Bid_for</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=236 HEIGHT=81 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-start_price(int);</FONT></P>
+			<P><FONT SIZE=4>-on_date(string);</FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=236 HEIGHT=92 VALIGN=TOP STYLE="border: 1px solid #00000a; padding: 0in 0.08in">
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>-startcall(string);</FONT></P>
+			<P STYLE="margin-bottom: 0.11in"><FONT SIZE=4>+ Customer ;</FONT></P>
+			<P><FONT SIZE=4>+Animal;</FONT></P>
+		</TD>
+	</TR>
+</TABLE><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 1.5in; text-indent: 0.5in; margin-bottom: 0.11in">
+<FONT COLOR="#00b050"><FONT SIZE=4 STYLE="font-size: 16pt">Architecture
+Structure Sample:</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><IMG SRC="SDS_Template_2nd_Part_html_4507313.png" NAME="Picture 1" ALIGN=BOTTOM WIDTH=677 HEIGHT=374 BORDER=0></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#00b050"><FONT SIZE=4 STYLE="font-size: 16pt"><B>2
+Architectural Styles / Patterns </B></FONT></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>The
+	korbaniCowProvider System will be developed under two main
+	architectural styles/ patterns. Development of the project will be
+	done in MVC architectural style and also 3 tier Client/Server
+	Architecture. User can browse the internet and access the
+	korbaniCowProvider System provided within the local area network
+	near Dhaka. </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>2.1
+MVC Architecture Style: </B></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>MVC
+	Style separates presentation and interaction from the system data.
+	The system is structured into three logical components that interact
+	with each other.  </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.04in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>The
+	Model component -Manages the system data and associated operations
+	on that data.  The View component- Defines and manages how the
+	data is presented to the user.  The Controller component- Manages
+	user interaction and passes these interactions to the View and the
+	Model. </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.04in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>We
+	will use this MVC Style for the korbaniCowProvider System because,
+	there are multiple ways to view and interact with data. Also used
+	when the future requirements for interaction and presentation of
+	data are unknown. In some software systems the code between the
+	process logic and interface are mixed. This will reduce the
+	modularity of application and make the system more difficult to
+	maintain. To avoid this problem we have decided to use MVC
+	architectural style to separate the application logic with the
+	interface. The main advantage of this is style allows the data to
+	change independently of its representation and vice versa. </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>2.2
+Three-Tier Client Server Architecture: </B></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>In a
+	client server architecture, the functionality of the system is
+	organized into services, with each service delivered from separate
+	server. Clients are users of these services and access servers to
+	make use of them.  We will use this 3- Tier Client Server
+	Architecture because, when data in a shared database has to be
+	accessed from a range of locations. Because servers can be
+	replicated, may also be used when the load on a system is a
+	variable.      </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Data
+	Tire:</B></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3>The
+ data  tire  maintains the  applications  data  such  as  Users’
+data , Departments’ data , Cows’ data , Payment’ data ,
+specification tables’ data and  the  SQL  queries .  It stores
+these data in a relational database management system (RDBMS). All 
+the  connections  with  the  RDBMS  are  managed  in  this  tier. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Middle
+	Tire: </B></FONT><FONT SIZE=3> </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3>The
+ middle tier ( web / application  server )  implements  the  business
+ logic ,  controller  logic  and presentation  logic  to control the
+interaction  between  the applications’  clients  and  data. 
+Business rules enforced by  the  business  logic  dictate  how 
+clients  and  cannot  access  application  data  and  how
+applications  process  data. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Client
+	Tire:</B></FONT><FONT SIZE=4> </FONT><FONT SIZE=3> </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3>The
+client  tire is  the  applications user interface  connecting  data 
+entry  forms  and  client  side  applications. It displays data to
+the user. User interact directly with the application through user
+interface. The  client tier  interacts with  the  web/ application 
+server to  make  requests  and to  retrieve  data  from  the 
+database. It  then  displays  to  the  user  the  data  retrieved
+from  the  server. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3><B>Example
+	of the 3-tier architecture in the Student Registration System </B></FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>The
+	KorbaniAnimalProvider system is composed of two components one is
+	user and another is admin. Admin can upload every animal picture
+	with details specification and user can sign up with name, username,
+	email address, phone number and the location. User get own profile
+	where he/she can update delete and modify his/her profile. User can
+	chose any kind of animal with any range there is a range for money
+	where use define what range he/she buy an animal. One animal have
+	multiple buyer those case there has an auction who win this auction
+	he/she can buy this animal. </FONT>
+	</P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>After
+	buying an animal user have a page where user look for total money
+	after adding home delivery charge and he/she can modify his/her
+	location where to home </FONT><FONT COLOR="#000000"><FONT SIZE=3><SPAN STYLE="background: #ffffff">delivery
+	and how he/she pay for this money (there is multiple option for
+	paying money line case on delivery or visa card or bkash). There is
+	an option for Kasai, we provide different Kasai for different
+	different location phone number, user can directly contact with
+	Kosai without any charge.</SPAN></FONT></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>2.3
+Different process and their communication </B></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>In
+	the korbaniCowProvider System, there are number of different
+	processes, such as database server process, web server process,
+	connections between above servers likewise. When sending mails there
+	should run a mail server. HTTP protocol is using to communicate with
+	web servers, SMTP protocol is using to communicate with mail
+	servers. They should communicate each other well to perform the
+	functions of whole application.  </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Arrangement
+	of devices and serves: </B></FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3>Our
+University korbaniCowProvider System needs some specific set of
+servers and devices. Such as: Server to host web applications and web
+service applications. Database server to store and manage data.
+Personal computer, note book, smart phone etc… to access the
+website. Modem/ router/ switch/ hub/ Wi-Fi network/ cable network
+etc… and also need an Internet Service Provider to have the
+internet connectivity.  </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>Communication
+	among components: </B></FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT SIZE=3>Above
+devices are communicating with each other. Personal computer
+communicates with web server and the database server through HTTP
+protocol. It communicates with mail server through SMTP protocol.
+Cable network or Wi-Fi network is also a communication method using
+in connecting different network components. </FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#00b050"><FONT SIZE=4 STYLE="font-size: 16pt">3.
+Design decisions applied whole application:</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>3.1
+Object oriented software development methods:  </B></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3><B>Reasons:</B></FONT></P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Improved
+	software </FONT>
+	</P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Faster
+	development  </FONT>
+	</P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Lower
+	cost development </FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Improved
+	software development productivity </FONT>
+	</P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Higher
+	quality software </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"> 
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>3.2
+Three-Tier Client Server Architecture: </B></FONT>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3><B>Reasons:
+ </B></FONT>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>As
+	more users access the system a three-tier solution is more scalable
+	than the other solutions because you can add as many middle tiers as
+	needed to ensure good performance. </FONT>
+	</P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Security
+	is also the best in the three-tier architecture because the middle
+	layer protects the database tier. </FONT>
+	</P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=4><B>3.3
+MVC Architectural Pattern:</B></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3><B>Reasons:</B></FONT></P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>It
+	should interact with other machines or users effectively. </FONT>
+	</P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>For
+	more efficient interaction system should have flexible interfaces. </FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>MVC
+	can be taken as for a popular and easy to handle web application
+	development style that has the feature of separating the
+	presentation, Business &amp; intermediate logics. </FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT SIZE=3>Ease
+	to coding and provide well defined interfaces within each logic</FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+</BODY>
+</HTML>
