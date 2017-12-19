@@ -1,0 +1,26 @@
+ h4{
+
+
+font-style: italic;
+font-color: blue;
+
+ }
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card {
+  height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
